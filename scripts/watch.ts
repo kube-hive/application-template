@@ -36,7 +36,7 @@ export async function main(): Promise<void> {
           });
         }
         server.middlewares.use('/_build', (req, res, next) => {
-          if(req.method !== 'POST') {
+          if(req.method === 'GET') {
             next()
             return;
           }
