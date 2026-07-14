@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	server: {
-		allowedHosts: process.env.ORIGIN ? [process.env.ORIGIN] : [],
+		allowedHosts: true,
 	},
 	plugins: [
 		tailwindcss(),
