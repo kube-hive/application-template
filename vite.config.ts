@@ -3,6 +3,13 @@ import adapter from '@sveltejs/adapter-node';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
+function getBasePath(): '' | `/${string}` {
+	if(process.env.VITE_BASE_PATH && process.env.VITE_BASE_PATH.startsWith('/')) {
+		return process.env.VITE_BASE_PATH as `/${string}`;
+	}
+	return '';
+}
+
 export default defineConfig({
 	server: {
 		allowedHosts: true,
@@ -10,6 +17,9 @@ export default defineConfig({
 	plugins: [
 		tailwindcss(),
 		sveltekit({
+			paths: {
+				base: getBasePath(),
+			},
 			experimental: {
 				remoteFunctions: true
 			},
