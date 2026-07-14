@@ -17,7 +17,7 @@ export async function main(): Promise<void> {
 
   const server = await createServer({
     server: {
-      port: 3000,
+      port: Number(process.env.VITE_SERVER_PORT) ?? 5173,
       allowedHosts: process.env.ORIGIN ? [process.env.ORIGIN] : [],
       host: '0.0.0.0',
     },
