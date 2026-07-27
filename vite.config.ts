@@ -13,6 +13,10 @@ function getBasePath(): '' | `/${string}` {
 export default defineConfig({
 	server: {
 		allowedHosts: true,
+		strictPort: true,
+	},
+	preview: {
+		strictPort: true,
 	},
 	plugins: [
 		tailwindcss(),
