@@ -18,6 +18,9 @@ export default defineConfig({
 	preview: {
 		strictPort: true,
 	},
+	ssr: {
+		noExternal: true,
+	},
 	plugins: [
 		tailwindcss(),
 		sveltekit({
