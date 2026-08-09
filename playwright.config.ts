@@ -6,7 +6,7 @@ export default defineConfig({
     // Configure Playwright to use the container's native Fedora Chromium package
     use: {
         launchOptions: {
-            executablePath: '/usr/bin/chromium',
+            executablePath: '/usr/bin/chromium-browser',
             args: ['--no-sandbox', '--disable-setuid-sandbox']
         }
     },
