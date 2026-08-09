@@ -10,7 +10,7 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:e2e": "playwright test --config playwright.config.ts --browser chromium"
+		"test:e2e": "playwright test --config playwright.config.ts"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.62.0",
