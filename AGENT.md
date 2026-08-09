@@ -254,6 +254,8 @@ import { Plus, Trash2 } from "@lucide/svelte";
 
 ## Validation & Testing
 
+**All testing must be done through Playwright using `npm run test:e2e`.** Do not use other test runners or frameworks. Write and run E2E tests to verify changes. Do not start a dev server manually (`npm run dev`, `npm run preview`, etc.) — the Playwright test command handles the web server automatically.
+
 ### Type checking
 
 ```bash
