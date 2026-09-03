@@ -58,7 +58,7 @@ src/
     components/ui/   # shadcn-svelte components
     utils.ts         # cn() helper and utility types
     hooks/           # Svelte hooks (e.g., is-mobile.svelte.ts)
-    assets/          # Static assets (favicon, etc.)
+    assets/          # Static assets bundled by Vite (favicons live in static/)
 tests/
   playwright/        # E2E tests
 ```
